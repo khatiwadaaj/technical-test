@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'MortModern-09Medium';
+  src: url('MortModern-09Medium.eot');
+  src: url('MortModern-09Medium.woff2') format('woff2'),
+       url('MortModern-09Medium.woff') format('woff'),
+       url('MortModern-09Medium.ttf') format('truetype'),
+       url('MortModern-09Medium.svg#MortModern-09Medium') format('svg'),
+       url('MortModern-09Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
