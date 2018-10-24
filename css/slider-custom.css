@@ -6,30 +6,28 @@
 .tns-nav > [aria-controls] {
   width: 9px;
   height: 9px;
-  padding: 5px;
+  padding: 2px;
   margin: 5px;
   border-radius: 50%;
   background: #ddd;
-  border: 2px solid #000;
-  text-align: center;
+  border: 1px solid #000;
 }
+.tns-nav {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  left: 50%;
+  top: 90%;
+  /* transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%); */
+}
+
 .tns-nav > [aria-selected="true"] {
   background: #999;
 }
 
-.tns-controls {
-  display: none;
-}
-
-.tns-nav {
-  position: absolute;
-  top: 510px;
-  left: 625px;
-
-  z-index: 1;
-}
-
 #tns1 > .tns-item {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
