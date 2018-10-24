@@ -6,15 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider-custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/min/tiny-slider.js"></script>
 </head>
 
 <body>
-
+    <div class="my-slider ">
+        <div>
+            <img class="hero-img" src="./img/hero2.jpg" alt="" height="500px">
+        </div>
+        <div>
+            <img class="hero-img" src="./img/hero1.jpg" alt="" height="500px">
+        </div>
+        <div>
+            <img class="hero-img" src="./img/hero3.jpg" alt="" height="500px">
+        </div>
+    </div>
     <!-- header with brand logo and search and hamburger icon -->
     <header class="head-container">
-        <img src="img/logo.svg" alt="Creative Inc Logo" class="logo">
+
+        <img src="./img/logo.svg" alt="Creative Inc Logo" class="logo">
         <div>
             <img class="icon" src="./img/icon-search.svg" alt="">
             <img class="icon" src="./img/icon-menu.svg" alt="">
@@ -147,7 +160,7 @@
                 <img src="./img/2.jpg" alt="">
                 <img src="./img/3.jpg" alt="">
                 <img src="./img/4.jpg" alt="">
-                <img src="./img/6.jpg" alt="">
+                <img src="./img/5.jpg" alt="">
             </div>
         </div>
     </section>
@@ -264,6 +277,26 @@
         </div>
 
     </footer>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 1
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 1,
+
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
