@@ -27,11 +27,66 @@ body {
   height: 97vh;
 }
 
+/* styling the svg triangle */
+.triangle-wrapper {
+  position: relative;
+}
+
+.triangle-wrapper .triangle {
+  position: absolute;
+  z-index: 1;
+}
+
+.triangle #symbols {
+  stroke-width: 1;
+  fill: none;
+  fill-rule: evenodd;
+}
+
+.triangle .right {
+  transform: translate(-80px, -345px);
+  fill: #12d5f9;
+  opacity: 0.645145089;
+}
+.triangle .mid-right {
+  transform: translate(50px, -570px);
+  fill: #f97a12;
+  opacity: 0.645145089;
+}
+
+.triangle .bottom-right {
+  transform: translate(50px, -570px);
+  fill: #f912da;
+  opacity: 0.5;
+}
+
+.triangle .left {
+  transform: translate(-1060px, -490px);
+  fill: #afb42b;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.triangle .mid-left {
+  transform: translate(-836px, -521px);
+  fill: #12d5f9;
+  opacity: 0.645145089;
+}
+
+.triangle .bottom-left {
+  transform: translate(-836px, -520px);
+  fill: #afb42b;
+  opacity: 0.645145089;
+}
+
+.triangle-wrapper polygon {
+  mix-blend-mode: screen;
+}
+
 .head-container {
   position: absolute;
   width: 100%;
   top: 0;
-
   display: flex;
   justify-content: space-between;
 }
@@ -116,23 +171,37 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  shape-outside: inset(100px 100px 100px 100px);
 }
 
 .kids-button {
   position: absolute;
   bottom: 32px;
+  z-index: 1;
+  border-color: #efefef;
 }
 
 .margin-default {
   margin-top: 35px;
 }
-.banner-info {
+.kids-info {
   position: relative;
 }
 
-.banner-info,
+.kids-info,
 .music-info {
   padding-top: 70px;
+  z-index: 1;
 }
 
 .music-banner,
@@ -178,6 +247,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 .music-heading {
@@ -352,11 +422,6 @@ body {
   padding-left: 10px;
 }
 
-/* for svg triangle */
-.right-positioned {
-  position: absolute;
-  left: 100%;
-}
 .social-contact .contact-form form {
   display: flex;
   font: 22px;
